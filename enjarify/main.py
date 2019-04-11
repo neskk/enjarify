@@ -101,7 +101,11 @@ def main():
 
     for name, error in sorted(errors.items()):
         print(name, error)
-    print('{} classes translated successfully, {} classes had errors'.format(len(classes), len(errors)))
+
+    if len(errors) > 0:
+        print('{} classes translated successfully, but {} classes failed.'.format(len(classes), len(errors)))
+    else:
+        print('{} classes translated successfully.'.format(len(classes)))
 
 if __name__ == "__main__":
     main()

@@ -1,7 +1,8 @@
 *.pyc
 *.pyo
-
 *.jar
 .coverage
+bin
+enjarify.egg-info
 htmlcov
 ignore*
